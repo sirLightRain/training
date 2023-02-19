@@ -1,0 +1,22 @@
+.post-title {
+    letter-spacing: 10px;
+  }
+  
+  .post-text {
+    letter-spacing: 2px;
+  }
+  .title {
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+  }
+  pre {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #2a2a2a;
+    font-size: 16px;
+  }
+  
+  pre::first-letter {
+    font-family: 'Tahoma', serif;
+    font-size: 20px;
+    color: #f44336;
+  }
