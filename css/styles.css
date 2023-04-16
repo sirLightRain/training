@@ -134,3 +134,12 @@ html {
   }
 }
 
+/* ============================== Check-box practice! ============================== */
+/* .check-box_title {
+  text-align: center;
+} */
+
+.check-box_label:hover,
+.check-box_label:focus {
+  cursor: pointer;
+}
