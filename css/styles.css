@@ -135,11 +135,76 @@ html {
 }
 
 /* ============================== Check-box practice! ============================== */
-/* .check-box_title {
-  text-align: center;
+
+.option {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check__input {
+  position: absolute;
+  appearance: none;
+}
+
+.check__box {
+  margin-left: -1.2em;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url('../image/checkbox/off.svg');
+}
+
+/* Checked */
+.check__input:checked + .check__box {
+  background-image: url('../image/checkbox/on.svg');
+}
+
+/* Focused */
+.check__input:focus + .check__box {
+  background-image: url('../image/checkbox/off-focused.svg');
+}
+
+.check__input:checked:focus + .check__box {
+  background-image: url('../image/checkbox/on-focused.svg');
+}
+
+/* Disabled */
+.check__input:disabled + .check__box {
+  background-image: url('../image/checkbox/off-disabled.svg');
+}
+
+.check__input:checked:disabled + .check__box {
+  background-image: url('../image/checkbox/on-disabled.svg');
+}
+
+.bg-gif {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+/* ============================== SWIPER ============================== */
+.slider {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+/* .swiper-buttons {
+  cursor: pointer;
 } */
 
-.check-box_label:hover,
-.check-box_label:focus {
-  cursor: pointer;
-}
+/* .button-prev {
+  border: 1px solid teal;
+} */

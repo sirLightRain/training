@@ -8,6 +8,11 @@
     <!-- Встановлення іконки на вкладку сайту! -->
     <link rel="shortcut icon" href="./image/favicon.png" type="image/png">
 
+    <!-- === Swiper === -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- === Шрифти === -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- === Нормалізація === -->
@@ -66,32 +71,105 @@
       <section class="check-box container">
         <p class="check-box__title">Практикую чек-бокси!</p>
 
-        <label class="check">
+        <label class="check option">
           <input type="checkbox" class="check__input">
+          <span class="check__box"></span>
           Перший
         </label>
 
-        <label class="check">
+        <label class="check option">
           <input type="checkbox" class="check__input" checked>
+          <span class="check__box"></span>
           Другий
         </label>
 
-        <label class="check">
+        <label class="check option">
           <input type="checkbox" class="check__input" disabled>
+          <span class="check__box"></span>
           Третій
         </label>
         
-        <label class="check">
+        <label class="check option">
           <input type="checkbox" class="check__input" checked disabled>
+          <span class="check__box"></span>
           Четвертий
         </label>
 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+
+        <hr>
+
+        <h2>Next section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>       
+
       </section>
+
+      <div class="container">
+        
+        <div class="bg-gif">
+            <img src="./image/watchspot.gif" alt="nice wach">
+        </div>
+      </div>
+    
+      <section class="slider">
+        <div class="container">
+          <h1>Swiper TEST</h1>
+          <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+          
+                  <!-- <div class="swiper-slide">
+                      <img src="../img/tabl-slider-image.jpg" alt="#">
+                  </div> -->
+          
+                  <div class="swiper-slide">
+                      <img src="./image/for-swiper/tabl-slider-image2.jpg" alt="#">
+                  </div>
+          
+                  <div class="swiper-slide">
+                      <img src="./image/for-swiper/tabl-slider-image3.jpg" alt="#">
+                  </div>
+          
+                  <div class="swiper-slide">
+                      <img src="./image/for-swiper/tabl-slider-image4.jpg" alt="#">
+                  </div>
+          
+                  <div class="swiper-slide">
+                      <img src="./image/for-swiper/tabl-slider-image5.jpg" alt="#">
+                  </div>
+          
+              </div>
+          </div>
+          
+          <div class="swiper-buttons">
+              <div class="button-prev">назад</div>
+              <div class="button-next">впере</div>
+          </div>
+          
+        </div>
+    </section>
+
   </main>
 
 
   <footer>
     Найкращий футер
   </footer>
+  <!-- Swiper script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Swiper initialization -->
+  <script>
+    const swiper = new Swiper(".mySwiper",{
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+            enabled: true,
+        },
+        navigation: {
+            nextEl: ".button-next",
+            nextEl: ".button-prev",
+        },
+    });
+  </script>
 </body>
 </html>
